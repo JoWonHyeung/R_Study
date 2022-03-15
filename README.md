@@ -1,7 +1,13 @@
 # R
 
-## -3/15
+## 3/15
 
-R: TRUE, FALSE, T, F
+- #### Boolean값 비교
 
-Python: True, False
+     R: TRUE, FALSE, T, F
+
+     Python: True, False
+
+- #### 대입연산자
+     
+     v1 <- 10
