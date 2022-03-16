@@ -12,6 +12,8 @@
 
 ## 3/16
 
+### 벡터
+
 max : 벡터내에서 최대값 출력
 
 min : 벡터내에서 최소값 출력
@@ -56,3 +58,30 @@ paste (..., sep = " ", collapse = NULL) : 나열된 원소 사이에 공백을 �
 paste0(..., collapse = NULL) : 나열된 원소 사이에 공백없이 출력합니다.
 
 summary : 기술통계함수
+
+```R
+mat[1,1,drop=F] #메트릭스 형태를 유지하려면 drop=F 설정
+```
+
+### 메트릭스
+
+maxtrix(data, nrow, ncol, byrow, dimname) : 행렬 생성 함수, 행부터 채울려면 byrow = True로 설정
+          
+          ex) matrix(1:8, nrow =2)
+              2 x 4 행렬 생성, default는 열먼저 채우고 행을 채운다.
+              만약 원소의 개수가 맞지 않으면 처음 원소로 채워진다.   
+
+dim : 행렬 차원 반환
+
+colnames, rownames : 행과 열에 이름을 붙인다.
+
+rbind, cbind : 백터들을 모아서 메트릭스 생성을 가능하게 하는 함수
+
+t() : 전치행렬로 변환
+
+### Array (3차원)
+
+원소의 개수를 무조건 맞춰야 한다.
+```R
+a1 <- array(1:30, dim=c(2,3,5))
+```
