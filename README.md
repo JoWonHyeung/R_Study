@@ -54,3 +54,5 @@ sample(벡터, 몇 개를 뽑을지, replace=복원 추출 or 비복원 추출) 
 paste (..., sep = " ", collapse = NULL) : 나열된 원소 사이에 공백을 두고 결과값을 출력합니다.
 
 paste0(..., collapse = NULL) : 나열된 원소 사이에 공백없이 출력합니다.
+
+summary : 기술통계함수
