@@ -136,3 +136,10 @@ mode : 객체의 내부적 타입 확인
 1. table 함수를 사용한다
 
 2. summary(factor(score$result))처럼 factor로 바꿔서 실행할 것
+
+### 연산
+```R
+num1 / num2    # 나눗셈
+num1 %% num2   # 나머지 값
+num1 %/% num2  # 몫
+```
