@@ -171,8 +171,56 @@ cat : 여러 개의 값을 연결해서 출력할 때, 출력 후 줄바꿈을 �
 
 ### 정규표현식
 
-"[가나다]" : 가,나,다
-"가나다" : '가나다', 붙어 있어야 된다.
-"[A-Z]" : A부터 Z까지.
+gsub : 해당하는 조건을 만족하는 식을 모두 대체하는 함수
+```R
+ gsub("Aa{2}","",word) #Aaa 제거
+ gsub("(Aa){2}", "", word) #AaAa 제거
+ gsub("[Aa]", "", word) #A or a 제거
+ 
+ txt <- "Data Analytics is useful. Data Analytics is also interesting."
+ sub(pattern="Data", replacement="Business", x=txt)
+ gsub(pattern="Data", replacement="Business", x=txt)
+```
+
+sub: 해당하는 조건을 만족하는 식을 하나 대체하는 함수
+
+
+[:punct:] : 특수문자
+[:alnum:] : 문자와 숫자
+[:digit:] : 숫자
+[:space:] :  스페이스
+^[:alnum:] : 문자와 숫자 제외
+
+"[가나다]" : 가 or 나 or 다
+"가나다" : 가 and 나 and 다
+"[A-Z]" : A부터 Z까지
 "^" : not의 의미
+"\\d", "\\D" : 숫자를 의미
+
+### 문자열 처리 관련 주요 함수들 
+
+nchar : 문자 개수 반환
+
+length : 벡터의 길이
+
+sort : 정렬
+
+tolower : 소문자 변환
+
+toupper : 대문자 변환
+
+substr(x, start, stop) :  start부터 stop까지 출력. start, stop둘다 써줘야 한다.
+```R
+substr("Data Analytics", start=c(1,6), stop=c(4,14)) # 첫 번째 결과만 호출된다.
+
+classname <- c("Data Analytics", "Data Mining", "Data Visualization")
+substr(classname, 1, 4) # "Data" "Data" "Data" 가 반환된다.
+```
+
+substring(x,first,last) : first부터 last까지 출력. first쓰고 last를 안쓰면 끝까지 반환된다.
+```R
+substring("Data Analytics", first=c(1,6), last=c(4,14)) #1~4에 해당하는 string값과 6~14까지 해당하는 string값을 vector로 반환한다.
+```
+
+grep(pattern, x=data, value=F) : pattern에 만족하는 모든 string값들의 index값들을 반환한다. value=T로 설정하면, string값이 반환된다.  
 
