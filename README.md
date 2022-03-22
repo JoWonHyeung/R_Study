@@ -250,6 +250,7 @@ substring("Data Analytics", first=c(1,6), last=c(4,14)) #1~4에 해당하는 str
 
 grep(pattern, x=data, value=F) : pattern에 만족하는 모든 string값들의 index값들을 반환한다. value=T로 설정하면, string값이 반환된다.  
 
+strsplit : 문자열을 분리자로 분리하는 함수
 
 
 
