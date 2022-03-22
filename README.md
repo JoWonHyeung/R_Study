@@ -194,8 +194,17 @@ sub: 해당하는 조건을 만족하는 식을 하나 대체하는 함수
 "[가나다]" : 가 or 나 or 다
 "가나다" : 가 and 나 and 다
 "[A-Z]" : A부터 Z까지
-"^" : not의 의미
-"\\d", "\\D" : 숫자를 의미
+"\\d": 숫자를 의미
+"\\D": 숫자가 아닌 것
+"\\s": 공백
+"\\S": 공백이 아닌 것
+"\\w": 단어
+"\\W": 단어가 아닌 것
+"\\t": Tab
+"\\n": New Line
+"^c" : c로 시작
+"[^c]" : 부정
+"t$" : t로 끝남
 
 ### 문자열 처리 관련 주요 함수들 
 
@@ -223,4 +232,7 @@ substring("Data Analytics", first=c(1,6), last=c(4,14)) #1~4에 해당하는 str
 ```
 
 grep(pattern, x=data, value=F) : pattern에 만족하는 모든 string값들의 index값들을 반환한다. value=T로 설정하면, string값이 반환된다.  
+
+
+
 
