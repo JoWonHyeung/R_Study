@@ -252,5 +252,11 @@ grep(pattern, x=data, value=F) : pattern에 만족하는 모든 string값들의 
 
 strsplit : 문자열을 분리자로 분리하는 함수
 
+## 3/23
 
+### gsub vs grep
+
+gsub : 해당 pattern이 존재하면 replacement로 교체해주는 함수
+
+grep : 해당 패턴이 있는지 없는지 확인하는 함수. value=T로 설정시 value값들이 반환되고, default로 놨두면, index값들이 반환된다.
 
