@@ -288,6 +288,22 @@ mapply : 벡터에 함수를 반복 적용(리스트로 출력), sapply와 유�
 
 tapply : 그룹별 연산
 
+## 3/25
 
+java -Dwebdriver.chrome.driver="chromedriver.exe" -jar selenium-server-standalone-4.0.0-alpha-1.jar -port 4445 #chromedriver실행
 
+```R
+#driver 실행
+remDr <- remoteDriver(remoteServerAddr = "localhost" , 
+                      port = 4445, browserName = "chrome")
+remDr$open()
+remDr$navigate("http://www.google.com/")
+
+x <- remDr$findElement(using='css selector', 'div') #노드 한 개 리턴(webelement 객체)
+x$getElementTagName() #태크 이름 반환
+x$getElementText() #텍스트 반환
+x$getElementAttribute() #css 반환
+
+more<-remDr$findElements(using='css selector', 'div') #복수형으로 노드 추출
+```
 
