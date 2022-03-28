@@ -313,4 +313,6 @@ extractNoun : 명사 반환
 
 SimplePos09 : 9가지 품사로 형태소 분석
 
-simplePos22 : 22가지 품사로 형태소 
+simplePos22 : 22가지 품사로 형태소 분석
+
+Filter(function(x) { } ,cdata) #function 내부에 True, False값 반환
