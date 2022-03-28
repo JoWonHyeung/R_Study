@@ -307,3 +307,10 @@ x$getElementAttribute() #css 반환
 more<-remDr$findElements(using='css selector', 'div') #복수형으로 노드 추출
 ```
 
+### 3/28
+
+extractNoun : 명사 반환
+
+SimplePos09 : 9가지 품사로 형태소 분석
+
+simplePos22 : 22가지 품사로 형태소 
