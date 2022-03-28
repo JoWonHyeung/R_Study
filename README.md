@@ -315,4 +315,9 @@ SimplePos09 : 9가지 품사로 형태소 분석
 
 simplePos22 : 22가지 품사로 형태소 분석
 
+buildDictionary(user_dic=data.frame("디카프리오", "ncn"),replace_usr_dic = T): 단어 추가 
+
+wordcloud, wordcloud2 : 데이터 시각화 
+
+
 Filter(function(x) { } ,cdata) #function 내부에 True, False값 반환
