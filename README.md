@@ -321,3 +321,7 @@ wordcloud, wordcloud2 : 데이터 시각화
 
 
 Filter(function(x) { } ,cdata) #function 내부에 True, False값 반환
+
+### 3/29
+
+- dataframe을 전치하면, matrix로 바뀐다
