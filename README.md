@@ -307,7 +307,7 @@ x$getElementAttribute() #css 반환
 more<-remDr$findElements(using='css selector', 'div') #복수형으로 노드 추출
 ```
 
-### 3/28
+## 3/28
 
 extractNoun : 명사 반환
 
@@ -322,11 +322,11 @@ wordcloud, wordcloud2 : 데이터 시각화
 
 Filter(function(x) { } ,cdata) #function 내부에 True, False값 반환
 
-### 3/29
+## 3/29
 
 - dataframe을 전치하면, matrix로 바뀐다
 
-### 3/30
+## 3/30
 
 - table객체로 plot 함수에 data를 넣어주면 x축 label값이 생성되지만, name vector객체로 plot함수에 data를 넣어주면 x축에 label이 생성되지 않는다. 이유는 모르겠다..
 
