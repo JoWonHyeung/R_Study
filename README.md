@@ -333,3 +333,12 @@ Filter(function(x) { } ,cdata) #function 내부에 True, False값 반환
 ## 3/31
 
 - tibble : dataframe이지만 데이터 타입 확인가능하다.
+
+## 4/4
+
+gather : wide format -> long format
+
+seperate : long format -> wide format
+
+unite : col 병합
+
