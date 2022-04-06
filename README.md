@@ -342,3 +342,6 @@ seperate : long format -> wide format
 
 unite : col 병합
 
+## 4/6
+
+상관계수가 높다고 인과관계가 있다는 것은 아니다. 인과관계 파악을 위해서는 회귀 분석을 해야된다.
